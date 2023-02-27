@@ -1,0 +1,285 @@
+* {
+    
+    font-family: 'Signika Negative', sans-serif;
+    
+
+  }
+  body{
+    overflow-x: hidden; 
+    width:100%; 
+    margin: 0px; 
+    padding: 0px; 
+  }
+  
+  html{
+    overflow-x: hidden; 
+    font-size: 16px;
+    width:100%; 
+    margin: 0px; 
+    padding: 0px; 
+    
+  }
+  .header {
+    display: grid;
+    width: 100%;
+    padding: 15px;
+    height: 230px;
+    background: linear-gradient(#0787ef,white);
+    margin-right: auto;
+    
+  }
+
+  
+  .header h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-top: -165px;
+  
+  }
+  .header h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    position: relative;
+    margin:-2.5% 0;
+    text-align: center;
+    
+    
+  }
+  
+  hr {
+    height: 2.4px;
+    background-image: linear-gradient(90deg,black, transparent);
+    width: 90%;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    border: 0px;
+  }
+  .menu {
+    width: 100%;
+    float: left;
+    padding: 1px;
+    font-family: 'Signika Negative', sans-serif;
+    height:100%;
+    background: linear-gradient( white,#0787ef);
+    
+  
+    
+   
+  }
+  .menu img{
+    width: 30px;
+    height: 30px; 
+    float: left;
+    margin-right: 3px;
+  }
+  .menu ul{
+    margin-left: -20px;
+    width: 95%;
+    
+  }
+ section p{
+    margin-top: 6px;
+    font-size: 1rem;
+    padding-right: 20px;
+ }
+ 
+ 
+  
+  .main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    
+    
+    
+  }
+  .hr_main{
+    margin-left: 18px;
+    margin-bottom: -0.4vw;
+    height: 3.4px;
+    background-image: linear-gradient(90deg,#0787ef, transparent);
+    width: 30%;
+    border: 0px;
+    
+  }
+  
+  .img_perfil {
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    margin-left: 5%;
+  }
+  
+  .nav{
+    width: 100%;
+    float:left;
+  }
+
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+  }
+
+.nav__link--inside{
+    border-radius: 6px ;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: #8abee8;
+}
+
+.list{
+    width: 100%;
+    height: 100vh;
+    padding: 1px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    margin-left: -20px;
+    
+   
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+    width:30px;
+    height:30px;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.title_main{
+    
+    margin-left: 20px;
+    margin-bottom: -10px;
+      
+}
+
+.list__img{
+    width:30px;
+    height:30px;
+
+}
+
+
+ul.conimagen {list-style:circle;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+   
+    
+    
+ }
+.paragraph{
+    text-align:justify;
+    height: auto;
+    width: 1050px;
+    margin-left: 30px;
+    margin-bottom: -15px;
+    padding-bottom: 20px;
+
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  
+  background: white;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 5px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header{
+    width: 97%;
+  }
+  .header h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -220px;
+    margin-bottom: 10px;
+  }
+  .header h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+    
+  }
+  .img_perfil{
+    margin-bottom: -30px;
+    margin-top: 70px;
+    height: 175px;
+    width: 175px;
+    margin-left: auto;
+   margin-right: auto;
+   border-style: outset;
+   border-width: 3px;
+  border-color: coral; 
+  }
+  .menu{
+    padding: 0px;
+    margin-left:-4px;
+  }
+  section p{
+    
+    margin-right: 10px;
+    margin-left: -10px;
+  }
+  .conimagen{
+    padding-left:8px;
+  }
+  .paragraph{
+    width: 90%;
+    padding-left:8px;
+  }
+ 
+}
+
+
+
